@@ -2,8 +2,14 @@ package prototype_design_pattern;
 
 public class Scorpio implements ScorpioPrototype{
 
-    private ScorpioEngine scorpioEngine = new ScorpioEngine();
+    private ScorpioEngine scorpioEngine;
 
+    public Scorpio(){
+        this.scorpioEngine = new ScorpioEngine();
+    }
+    private Scorpio(ScorpioEngine scorpioEngine){
+        this.scorpioEngine=new ScorpioEngine(scorpioEngine);
+    }
     @Override
     public ScorpioPrototype clone() {
         return new Scorpio();
