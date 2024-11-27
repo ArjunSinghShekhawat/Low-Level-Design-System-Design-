@@ -16,6 +16,6 @@ public class Scorpio implements ScorpioPrototype{
 
     @Override
     public void start() {
-        System.out.println("Start go hai hai");
+        System.out.println("Start ho hai hai");
     }
 }
